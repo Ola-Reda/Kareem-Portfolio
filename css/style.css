@@ -1,0 +1,204 @@
+:root {
+    --main-color: ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/***********upper section***********/
+.upper-section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.upper-section ul {
+    gap: 45px;
+}
+
+.upper-section ul li {
+    background-color: #F4F2F0;
+    border-radius: 50%;
+}
+
+.upper-section img {
+    width: 60px;
+    height: 60px;
+}
+/***********upper section***********/
+/***********navbar***********/
+nav .navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+nav .navbar-toggler {
+    border-color: #342C23;
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav .nav-item .nav-link.active {
+    color: #594C3C;
+}
+
+nav .nav-item .nav-link {
+    position: relative;
+    color: black;
+    margin-left: 60px;
+    transition: .3s ease-in;
+}
+
+nav .nav-item:last-child .nav-link {
+    width: fit-content;
+    background-color: #342C23;
+    color: white;
+    font-weight: 500;
+    border: 1px solid #342C23;
+    border-radius: 8px;
+    padding: 6px 40px;
+    transition: .4s ease-in;
+}
+
+nav .nav-item:last-child .nav-link:hover {
+    background-color: transparent;
+    color: #342C23;
+}
+
+nav .nav-item .nav-link:hover {
+    color: #594C3C;
+}
+
+nav .nav-item .nav-link.active::after, 
+nav .nav-item:not(:last-child) .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 45px;
+    height: 2px;
+    background-color: #594C3C;
+    animation: stretch .4s ease-in;
+}
+
+@keyframes stretch {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav .nav-item .nav-link {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav .nav-item .nav-link.active::after, 
+    nav .nav-item:not(:last-child) .nav-link:hover::after {
+        left: 2px;
+    }
+}
+
+/***********navbar***********/
+/***********contact***********/
+.contact img {
+    width: 400px;
+    height: 400px;
+}
+
+.contact h2 {
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.contact h2 span {
+    color: #957E64;
+}
+
+.contact svg {
+    color: #342C23;
+}
+
+.contact form button {
+    width: fit-content;
+    background-color: #342C23;
+    color: white;
+    font-weight: 500;
+    border: 1px solid #342C23;
+    border-radius: 10px;
+    padding: 12px 35px;
+    margin-top: 30px;
+    transition: .4s ease-in;
+}
+
+.contact form button:hover {
+    background-color: transparent;
+    color: #342C23;
+    border: 1px solid #342C23;
+}
+/***********contact***********/
+/***********footer***********/
+footer {
+    background: url(../assets/images/footer.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+footer::after {
+    content: "";
+    background-color: #040404c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer p {
+    margin-bottom: 4rem;
+}
+
+footer ul a {
+    color: white;
+    font-size: 26px;
+    padding: 14px 0px 0px 16px;
+    border: 1px solid white;
+    border-bottom: 0px;
+    border-right: 0px;
+    /* box-shadow: -6px -4px 20px -6px rgba(0,0,0,0.25); */
+    transition: .4s ease-in-out;
+}
+
+footer ul li:first-child a:hover {
+    color: #1ad03f;    
+}
+
+footer ul li:nth-of-type(2) a:hover {
+    color: #38529a;    
+}
+
+footer ul li:nth-of-type(3) a:hover {
+    color: #1c96e9;    
+}
+
+footer ul li:nth-of-type(4) a:hover {
+    color: #bd419d;    
+}
+
+footer ul li:last-child a:hover {
+    color: #2563ab;    
+}
+
+/***********footer***********/
+
+
