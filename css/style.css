@@ -107,25 +107,52 @@ nav .nav-item:not(:last-child) .nav-link:hover::after {
         left: 2px;
     }
 }
-
 /***********navbar***********/
+h2 {
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+h2 span {
+    color: #957E64;
+}
+/***********reviews***********/
+.review svg {
+    color: #653C1F;
+}
+/***********reviews***********/
 /***********contact***********/
 .contact img {
     width: 400px;
-    height: 400px;
-}
-
-.contact h2 {
-    font-weight: 600;
-    font-size: 44px;
-}
-
-.contact h2 span {
-    color: #957E64;
 }
 
 .contact svg {
     color: #342C23;
+}
+
+.contact form .form-control::placeholder {
+    color: #957E64;
+    transition: .5s ease-in;
+}
+
+.contact form .form-control:hover::placeholder {
+    opacity: 0;
+}
+
+.contact form .input-group {
+    margin-bottom: 2rem;
+}
+
+.contact .form-control:focus {
+    box-shadow: none;
+    border-color: #957E64;
+}
+
+.contact form textarea {
+    height: 200px;
+    resize: none;
 }
 
 .contact form button {
