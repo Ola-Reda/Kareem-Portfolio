@@ -16,6 +16,17 @@ body {
     padding-bottom: 50px;
 }
 
+.upper-section h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.upper-section h3 {
+    color: #342C23;
+    font-size: 40px;
+    font-weight: 500;
+}
+
 .upper-section ul {
     gap: 45px;
 }
@@ -108,19 +119,98 @@ nav .nav-item:not(:last-child) .nav-link:hover::after {
     }
 }
 /***********navbar***********/
+/***********heading***********/
 h2 {
     font-weight: 600;
     font-size: 44px;
-    margin-bottom: 45px;
     text-align: center;
 }
 
 h2 span {
     color: #957E64;
 }
-/***********reviews***********/
-.review svg {
+/***********heading***********/
+/***********main***********/
+main {
+    background-color: #EFECE8;
+}
+
+main .icons a {
+    color: #43392D;
+    padding: 14px 0px 0px 16px;
+    transition: .4s ease-in-out;
+}
+
+main .image::before{
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    background-color: #43392D;
+    width: 600px;
+    height: 280px;
+    border-radius: 235px 50px 50px 235px;
+} 
+/***********main***********/
+/***********about***********/
+.about .box {
+    width: 70%;
+    margin: auto;
+}
+
+.about p {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.about button {
+    background: transparent;
     color: #653C1F;
+    font-weight: 600;
+    border: none;
+    outline: none;
+
+}
+
+.about button svg {
+    position: relative;
+    color: #653C1F;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 6px 0px #00000025;
+}
+
+.about button svg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #653C1F;
+    width: 50%;
+    height: 4px;
+}
+/***********about***********/
+/***********reviews***********/
+.reviews h2 svg {
+    color: #653C1F;
+    font-size: 32px;
+}
+
+.reviews .swiper-backface-hidden .swiper-slide {
+    margin-bottom: 50px;
+}
+
+.reviews .swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background: #342C23;
+}
+
+.reviews .swiper .swiper-pagination .swiper-pagination-bullet {
+    padding: 4px;
+    border: 2px solid #342C23;
+    transition: .4s ease-in;
 }
 /***********reviews***********/
 /***********contact***********/
@@ -163,7 +253,7 @@ h2 span {
     border: 1px solid #342C23;
     border-radius: 10px;
     padding: 12px 35px;
-    margin-top: 30px;
+    margin: auto;
     transition: .4s ease-in;
 }
 
@@ -202,7 +292,6 @@ footer ul a {
     border: 1px solid white;
     border-bottom: 0px;
     border-right: 0px;
-    /* box-shadow: -6px -4px 20px -6px rgba(0,0,0,0.25); */
     transition: .4s ease-in-out;
 }
 
