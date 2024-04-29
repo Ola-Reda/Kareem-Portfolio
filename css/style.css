@@ -1,5 +1,5 @@
 :root {
-    --main-color: ;
+    --main-color: #342C23;
 }
 
 html {
@@ -175,6 +175,34 @@ main .icons a {
     color: #43392D;
     padding: 14px 0px 0px 16px;
     transition: .4s ease-in-out;
+}
+
+main .box .links a {
+    text-decoration: none;
+    border: 1px solid #342C23;
+    border-radius: 8px;
+    padding: 7px 48px;
+    transition: .4s ease-in;
+}
+
+main .box .links a:first-child {
+    background: #342C23;
+    color: white;
+    margin-right: 10px
+}
+
+main .box .links a:first-child:hover {
+    background: transparent;
+    color: #342C23;
+}
+
+main .box .links a:last-child {
+    color: #342C23;
+}
+
+main .box .links a:last-child:hover {
+    background: #342C23;
+    color: white;
 }
 
 main .image::before{
