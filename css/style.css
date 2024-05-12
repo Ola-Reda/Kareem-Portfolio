@@ -171,10 +171,36 @@ main {
     background-color: #EFECE8;
 }
 
+main .icons {
+    gap: 37px;
+}
+
 main .icons a {
     color: #43392D;
-    padding: 14px 0px 0px 16px;
+    padding: 10px 0px 0px 12px;
+    border: 1px solid #43392D;
+    border-bottom: 0px;
+    border-right: 0px;
     transition: .4s ease-in-out;
+}
+
+main .box h1 {
+    font-size: 64px;
+    color: #342C23;
+}
+
+main .box h3 span {
+    color: #957E64;
+}
+
+main .box img {
+    width: 190px;
+    transform: translate(-55px, -62px);
+}
+
+main .box .links {
+    position: absolute;
+    bottom: 24px;
 }
 
 main .box .links a {
@@ -215,6 +241,18 @@ main .image::before{
     height: 280px;
     border-radius: 235px 50px 50px 235px;
 } 
+
+h3.fw-semibold {
+    position: relative;
+}
+
+h3.fw-semibold::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../assets/images/Frame 39 --_ Let ‘s connect.png")
+}
 /***********main***********/
 /***********about***********/
 .about .box {
@@ -230,6 +268,7 @@ main .image::before{
 }
 
 .about button {
+    /* position: relative; */
     background: transparent;
     color: #653C1F;
     font-weight: 600;
