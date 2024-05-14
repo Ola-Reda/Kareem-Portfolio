@@ -1,3 +1,17 @@
+//loader
+const body = document.querySelector("body")
+const loader = document.querySelector(".loader")
+setTimeout(() => {
+    load()
+}, 2000)
+function load() {
+    body.style.overflow = "auto";
+    loader.classList.add('hide')
+}
+
+
+
+//swiper
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 25,
